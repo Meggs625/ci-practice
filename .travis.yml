@@ -2,9 +2,14 @@ language: node_js
 node_js:
 - node
 notifications:
-  email: false
+email: false
+skip_cleanup: true 
+provider: heroku  
+app: ci-practice-meggs
+on:
+  repo: meggs625/ci-practice
+  branch: main
+env: 
 deploy:
   api_key:
-    secure: d1f2e852-0635-42a4-8c22-c16545e47b55
- app: ci-practice-meggs
-  skip_cleanup: true
+    secure: eHAQ7MrAu1ZkRwCKQJOdFz4ZvsF6+1lVSB3HZBzvrQivcAifgkUoJPK1gHhWVqFpB9es34CvOh+XRbrN5dUMCu2KtXEgn5F9B0Ye6xEXw10802FXxCk6TacJcEAOyIsvmn0AlXfrljuAHwVKbnAl0PxNxq8ZWbdxnRhxoIkd1NZoXC9jAkjs7iWqC5vuG9ePdGLvsbWQ1eytbBnukffYwL30VeJJqld/hQToUliUKdF1942JNZHXbwodIFvrTiaqbGTdQbuaJOyTi3kBgTial+2YNH0jc77EsOue6aHdSDmSpi8ZWXihrTG8qhJM+gw5qX0WWMiJ8Ub7VPiITXVJQteBJyUX4OIF9aua/JLOAydx80l36cHuQM4phg05KHECJ8yOQbtVzbsawGDL2y/BGAzMbnMia+HM5zNU3ryHIL3J88EkuzMnXULn4fEhlGtxEueh8Jslu44aKyZGC4N/hAoWCJa2kGq458cewv20wV6nMhV35uSlSixSTaWqZwz7v7Qoyw88JAIFB22hMTDvhvvB66M00JD1ZjRWaPeMC7mLzw0VPFMezAu+ySWnpM5a89+/9s+zuU7aADk7SxqoJGADJi8svB0l/ACZr87EQt/t+4QV3hQyehSUW9zMxFQeCcwRF5kK5+B3hPw6kd6Q6rjBUI8Q7zHad+HRNPhZoXs=
