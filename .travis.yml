@@ -1,5 +1,10 @@
 language: node_js
 node_js:
-  - "node"
-  notifications:
+- node
+notifications:
   email: false
+deploy:
+  api_key:
+    secure: d1f2e852-0635-42a4-8c22-c16545e47b55
+ app: ci-practice-meggs
+  skip_cleanup: true
